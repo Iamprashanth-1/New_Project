@@ -6,7 +6,7 @@ This Automation Can be done in Two Methods
 
 The Following Services or tools or database are used in this Project
 - Database : MongoDb (We can use Redshift as well due to resource restrictions unable to use it)
-- Programming : Python3
+- Programming Language: Python 3
 - Cloud services : AWS (ECS , ECR , Lambda , ClodWatch , EC2)
 
 ## Method 1 (Temo)
@@ -40,27 +40,26 @@ Flow
 
 ![Flow](https://github.com/Iamprashanth-1/New_Project/blob/main/project_cloud/method1.PNG)
 ```
-If we want to use this approach we need to load older data manually since loading older data takes more than 15 min
+To use this approach we need to load older data manually because loading older data takes more than 15 min
 
-Upon Evey day the lambda gets triggered by Cloudwatch event ( insertion time at max 3 minutes)
-
-we can add retry in template so that any exception occurs it gets retried
+Set a trigger such that lambda gets triggered by Cloudwatch event every day  insertion time at max 3 minutes
 
 
-This approach has drawback if we want to start with initial load
+
+The drawback of this approach is that we can add initial data automatically because
 - Lambda gets timeout for 15 minutes
 
 ```
 ## Method 2 (affi)
+Code is Available in Src Folder
+
 We can containerize the Script and Push it to ECR
 
-Code is Available in Source Folder
-
-Connect to ECR using below push Commands 
+Connect to ECR using below push Command
 ```
  aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin {account_id}.dkr.ecr.us-east-1.amazonaws.com
 ```
-Build the Docker Image using below Command
+Build Docker Image using below Command
 ```
 docker build -t project_name .
 ```

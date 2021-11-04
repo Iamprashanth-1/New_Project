@@ -1,0 +1,5 @@
+requests
+lxml
+boto3
+pymongo[srv]
+beautifulsoup4

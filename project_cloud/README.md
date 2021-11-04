@@ -75,7 +75,7 @@ Note :  Replace project_name with respective project name and {account_id} with 
 
 The Flow 
 
-![Flow](https://github.com/Iamprashanth-1/New_Project/blob/main/project_cloud/method2.PNG)
+![Flow](https://github.com/Iamprashanth-1/New_Project/blob/main/project_cloud/method2.0.PNG)
 
 
 

@@ -35,7 +35,7 @@ sam deploy --guided
 
 #### Note : Configure aws credentials in    .aws folder
 
-The Below is the Flow
+Flow
 
 
 ![Flow](https://github.com/Iamprashanth-1/New_Project/blob/main/project_cloud/method1.PNG)

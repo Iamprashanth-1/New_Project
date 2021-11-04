@@ -1,11 +1,11 @@
 # Mutual Fund Data Storage
 
-This Projects helps us to fetch the data everyday from amfiindia portal and store it in database 
+This Projects helps us in fetching the data from amfiindia portal everyday and store it in database 
 
-This Automation Can be done in Two Methods
+This Can be Automated in two Methods
 
-The Following Services or tools or database are used in this Project
-- Database : MongoDb (We can use Redshift as well due to resource restrictions unable to use it)
+The Following Services or tools or database are used for this Project
+- Database : MongoDb (Redshift can also be used due to resource restrictions we are unable to use)
 - Programming Language: Python 3
 - Cloud services : AWS (ECS , ECR , Lambda , ClodWatch , EC2)
 

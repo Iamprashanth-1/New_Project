@@ -9,7 +9,7 @@ The Following Services or tools or database are used in this Projects
 - Programming : Python3
 - Cloud services : AWS (ECS , ECR , Lambda , ClodWatch , EC2)
 
-## Method 1
+## Method 1 (Temo)
 
  Using Serverless Application Model (SAM) we can directly deploy the services which are mentioned in the template
 - First we need to install SAM CLI
@@ -51,7 +51,7 @@ This approach has drawback if we want to start with initial load
 - Lambda gets timeout for 15 minutes
 
 ```
-## Method 2
+## Method 2 (affi)
 We can containerize the Script and Push it to ECR
 
 Code is Available in Source Folder

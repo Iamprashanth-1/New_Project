@@ -38,7 +38,7 @@ sam deploy --guided
 The Below is the Flow
 
 
-![Flow](http://lmsotfy.com/so.png)
+![Flow](https://github.com/Iamprashanth-1/New_Project/blob/main/project_cloud/method1.PNG)
 ```
 If we want to use this approach we need to load older data manually since loading older data takes more than 15 min
 

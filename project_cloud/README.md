@@ -4,7 +4,7 @@ This Projects helps us to fetch the data everyday from amfiindia portal and stor
 
 This Automation Can be done in Two Methods
 
-The Following Services or tools or database are used in this Projects
+The Following Services or tools or database are used in this Project
 - Database : MongoDb (We can use Redshift as well due to resource restrictions unable to use it)
 - Programming : Python3
 - Cloud services : AWS (ECS , ECR , Lambda , ClodWatch , EC2)

@@ -33,7 +33,7 @@ def sqlite_insert(val):
             'Scheme Classification' VARCHAR(100),
             'Scheme Type' VARCHAR(100),
             'Scheme Category' VARCHAR(100),
-            'Fund Family' VARCHAR(100),
+            'Fund Family' VARCHAR(100)
             )'''
     cursor.execute(sql)
     cursor.executemany('INSERT INTO data VALUES (?,? ,?, ? ,? ,? ,? ,? ,? ,? ,?  ,?)', val)

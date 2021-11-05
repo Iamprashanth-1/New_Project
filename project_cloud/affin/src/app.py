@@ -86,15 +86,7 @@ def lambda_handler(url):
         raise Exception('unable to fetch data from AFFIINDIA')
     raw_data    = [line for line in response.split('\n') if line.strip()]
     #print(raw_data)
-    headings    = [heading.strip() for heading in raw_data[0].split(';')]
-
-    # Add scheme classification, fund family name and  as headings
-    headings.extend([
-        'Scheme Classification',
-        'Scheme Type',
-        'Scheme Category',
-        'Fund Family'
-    ])
+    Colums    = [val.strip() for val in raw_data[0].split(';')]+['Scheme Classification','Scheme Type','Scheme Category','Fund Family']
 
     final_data      = []
     final_data_sqlite = []
@@ -128,7 +120,7 @@ def lambda_handler(url):
                 
             ] )
             
-            final_data.append( dict( zip( headings, row ) ) )
+            final_data.append( dict( zip( Colums, row ) ) )
             final_data_sqlite.append( tuple(row))
     insert_mongo(final_data)
     # use this to insert for sqlite sqlite_insert(final_data_sqlite)

@@ -46,7 +46,7 @@ Set a trigger such that lambda gets triggered by Cloudwatch event every day  ins
 
 
 
-The drawback of this approach is that we can add initial data automatically because
+The drawback of this approach is that we can't add initial data automatically because
 - Lambda gets timeout for 15 minutes
 
 ```
